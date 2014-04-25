@@ -4,7 +4,7 @@
           <h4>Congratulations, you are among the best of the best:</h4>
           <% @users.each do |user| %>
           <li>
-            <h4><%= user.name %></h4>
+            <h4><%= link_to user.name %></h4>
           </li>
           <% end %>
       </div>
