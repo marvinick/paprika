@@ -1,0 +1,27 @@
+<h4>Let's make it official </h4>
+  <%= form_for @member do |f| %>
+    <tr>
+      <div class='control-group'>
+        <%= f.label :name %>
+        <%= f.text_field :name, class: "form-register" %>
+      </div>
+      <div class='control-group'>
+        <%= f.label :email %>
+        <%= f.text_field :email, class: "form-register" %>
+      </div>
+      <div class='control-group'>
+        <%= f.label :job_title %>
+        <%= f.text_field :job_title, class: "form-register" %>
+      </div>
+      <div class='control-group'>
+        <%= f.label :password_digest %>
+        <%= f.password_field :password_digest, class: "form-register" %>
+      </div>
+      <div class='control-group'>
+        <%= f.label :job_title %>
+        <%= f.text_field :job_title, class: "form-register" %>
+      </div>
+
+        <%= f.submit @member.new_record? ? "It's official!!" : "Update Note", class: 'btn btn-success' %>
+  <% end %>
+  </div>
