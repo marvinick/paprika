@@ -1,5 +1,9 @@
 class MembersController < ApplicationController
 
+  def index
+    @members = Member.all
+  end
+
   def new
     @member = Member.new
   end
@@ -13,6 +17,8 @@ class MembersController < ApplicationController
   end
 
   def show
+    @members = Member.all
+    @member = Member.find(params[:id])
   end
 
 

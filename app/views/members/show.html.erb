@@ -1,0 +1,9 @@
+<div class="container content-section text-center">
+  <div class="col-lg-8 col-lg-offset-2">
+    <% @members.each do |member| %>
+      <h3><%= member.name %></h3>
+      <h3><%= member.email %></h3>
+      <h3><%= member.job_title %></h3>
+    <% end %>
+  </div>
+</div>
