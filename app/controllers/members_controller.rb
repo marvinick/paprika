@@ -21,6 +21,17 @@ class MembersController < ApplicationController
     @member = Member.find(params[:id])
   end
 
+  def edit
+     @member = Member.find(params[:id])
+  end
+
+  def update
+     if @member.update(member_params)
+      redirect_to member_path(@member)
+    else
+      render :edit
+    end
+  end
 
   private
 
