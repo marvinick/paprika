@@ -20,39 +20,88 @@
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
             <center><h2>About peppr</h2></center>
-            <p>peppr is a new way for chefs around the world to put their skills on display for the future employers to see.</p>
-            <p>This striking, black and white theme features stock photographs by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Map skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+            <p>you would think peppr is just another job searching site out there. Maybe you right! But what if I tell you that it is made by a chef to all the chefs out there. peppr is a new way for chefs around the world to put their skills on display for the future employers to see.</p>
         </div>
     </div>
     <hr>
 
-    <center><div class="register">
-        <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-                <%= render 'form' %>
+  <div class="container">
+  <h3 id="features" class="subhead">Packages</h3>
+    <div class="row benefits">
+      <div class="col-md-4 col-sm-6 benefit">
+        <div class="benefit-ball">
+          <span class="glyphicon glyphicon-leaf"></span>
+        </div>
+    <h3><%= link_to "Showcase", new_member_path %></h3>
+    <p>Instead of having to wait for an interview, why don't we just cut the time for face to face questions and get down right to business. Show the prospect employers what you can do and let them send you additional questions</p>
+  </div>
+
+    <div class="col-md-4 col-sm-6 benefit">
+      <div class="benefit-ball">
+        <span class="glyphicon glyphicon-cloud"></span>
+      </div>
+      <h3><%= link_to "Lean", members_path %></h3>
+      <p>Put your resume online for the employers to see. You can put as much or as little information as you like.</p>
+    </div>
+
+    <div class="col-md-4 col-sm-6 benefit">
+      <div class="benefit-ball">
+        <span class="glyphicon glyphicon-bell"></span>
+      </div>
+      <h3><%= link_to "Social Media", members_path %></h3>
+      <p>Link your resume to other portfolio and social media. Facebook, instagram, twitter those are usually where you are online right? </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <strong id="logo">Not ready yet?</strong>
+          <h3>if you simply want to be notified about upcoming opportunities</h3>
+          <h4>enter your email, and nothing else</h4>
+        </div> <!-- /.col-md-12 -->
+      </div> <!-- /.row -->
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Enter email">
             </div>
-        </div>
-    </div></center>
-    <hr>
+            <button type="submit" class="btn btn-primary">Notify Me</button>
+          </form>
+        </div> <!-- /.col-md-12 -->
+      </div> <!-- /.row -->
 
-    <center><div class="contact">
-        <div class="col-lg-8 col-lg-offset-2">
-            <h4>Contact peppr</h4>
-            <p>Feel free to email us to provide some feedback on our service or if you have any question at all</p>
-            <p>feedback@gopeppr.com</p>
-            <ul class="list-inline banner-social-buttons">
-                <li><a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                </li>
-                <li><a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                </li>
-                <li><a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                </li>
-            </ul>
-        </div>
-    </div></center>
-    <hr>
+      <div class="row">
+        <div class="col-md-12 text-center" id="links">
+          <p>
+            <a href="http://coverstrap.com">
+              <span class="glyphicon glyphicon-home"></span>
+              From Coverstrap
+            </a>
+            <span class="separator">&middot;</span>
+            <a href="#">
+              <span class="glyphicon glyphicon-user"></span>
+              About Us
+            </a>
+            <span class="separator">&middot;</span>
+            <a href="#">
+              <span class="glyphicon glyphicon-thumbs-up"></span>
+              Like Us
+            </a>
+            <span class="separator">&middot;</span>
+            <a href="#">
+              <span class="glyphicon glyphicon-envelope"></span>
+              Contact Us
+            </a>
+          </p>
+        </div> <!-- #links -->
+      </div> <!-- /.row -->
 
-
-
+    </div> <!-- /.container -->
 
 </body>
